@@ -71,4 +71,27 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Category:
+ *       type: object
+ *       description: Representa una categoría del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - description
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Electrónica
+ *         description:
+ *           type: string
+ *           example: Dispositivos electrónicos y accesorios
+ */
 export {};
