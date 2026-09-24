@@ -1,5 +1,9 @@
 import { User } from "../interfaces/users.interface";
 
+/**
+ * Datos de ejemplo de usuarios usados en las pruebas unitarias.
+ * Contiene un array de usuarios con id, name, lastName, age, email e engineering.
+ */
 export const USERS_MOCK: User[] = [
     {
         id: 1,
