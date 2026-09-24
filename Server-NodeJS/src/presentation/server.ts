@@ -28,8 +28,13 @@ export class Server {
   /** Instancia de Express */
   public readonly app = express();
 
+  /** Puerto en el que escucha el servidor */
   private readonly port: number;
+
+  /** Ruta de la carpeta pública con los archivos estáticos */
   private readonly publicPath: string;
+
+  /** Router principal con todas las rutas de la API */
   private readonly routes: Router;
 
   /**

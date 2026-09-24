@@ -1,7 +1,19 @@
 import { Router } from "express";
 import { UsersController } from "./users.controller";
 
+/**
+ * Define los endpoints del módulo de usuarios y los delega a su controlador.
+ *
+ * @remarks
+ * Esta clase agrupa las rutas relacionadas con usuarios,
+ * delegando la lógica de negocio al `UsersController`.
+ */
 export class UsersRoutes {
+  /**
+   * Retorna el router de Express con las rutas del módulo.
+   *
+   * @returns Router de Express con las rutas del módulo
+   */
   static get routes(): Router {
     const router = Router();
     const controller = new UsersController();
