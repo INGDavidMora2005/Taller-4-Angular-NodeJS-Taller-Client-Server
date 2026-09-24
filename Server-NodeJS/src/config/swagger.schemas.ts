@@ -94,4 +94,32 @@
  *           type: string
  *           example: Dispositivos electrónicos y accesorios
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Customer:
+ *       type: object
+ *       description: Representa un cliente del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - email
+ *         - phone
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Carlos Ramírez
+ *         email:
+ *           type: string
+ *           format: email
+ *           example: carlos@example.com
+ *         phone:
+ *           type: string
+ *           example: +57 300 123 4567
+ */
 export {};
