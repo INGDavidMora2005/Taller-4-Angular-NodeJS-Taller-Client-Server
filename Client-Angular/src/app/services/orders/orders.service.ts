@@ -23,6 +23,10 @@ import { Order } from '../../interfaces/orders.interface';
 })
 export class OrdersService {
 
+  /**
+   * Cliente HTTP de Angular para realizar peticiones a la API.
+   * Se inyecta usando la función `inject`.
+   */
   private httpClient = inject(HttpClient);
 
   /**
