@@ -122,4 +122,40 @@
  *           type: string
  *           example: +57 300 123 4567
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Order:
+ *       type: object
+ *       description: Representa un pedido del sistema
+ *       required:
+ *         - id
+ *         - product
+ *         - quantity
+ *         - total
+ *         - status
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         product:
+ *           type: string
+ *           example: Auriculares inalámbricos
+ *         quantity:
+ *           type: number
+ *           example: 2
+ *         total:
+ *           type: number
+ *           example: 129.99
+ *         status:
+ *           type: string
+ *           enum:
+ *             - Pendiente
+ *             - Enviado
+ *             - Entregado
+ *             - Cancelado
+ *           example: Pendiente
+ */
 export {};
