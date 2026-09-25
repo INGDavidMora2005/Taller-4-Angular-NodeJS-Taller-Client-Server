@@ -1,0 +1,22 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Producto</th>
+			<th scope="col">Cantidad</th>
+			<th scope="col">Total</th>
+			<th scope="col">Estado</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (order of orders; track order) {
+			<tr>
+				<th scope="row">{{ order.id }}</th>
+				<td>{{ order.product }}</td>
+				<td>{{ order.quantity }}</td>
+				<td>{{ order.total }}</td>
+				<td>{{ order.status }}</td>
+			</tr>
+		}
+	</tbody>
+</table>
